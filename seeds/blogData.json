@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Understanding MVC Architecture",
+    "description": "Learn about Model-View-Controller architecture and its benefits in developing web applications."
+  },
+  {
+    "title": "Building a Blog Using MVC",
+    "description": "Step-by-step guide to creating a blog application using Model-View-Controller design pattern."
+  },
+  {
+    "title": "MVC vs. MVVM: A Comparison",
+    "description": "Explore the differences between MVC and MVVM architectural patterns and when to use each."
+  },
+  {
+    "title": "Best Practices for Structuring MVC Projects",
+    "description": "Tips and tricks for organizing your Model-View-Controller projects for better maintainability and scalability."
+  },
+  {
+    "title": "Implementing Authentication in MVC Applications",
+    "description": "Guide on adding user authentication features to your Model-View-Controller web applications."
+  },
+  {
+    "title": "Testing Strategies for MVC Applications",
+    "description": "Learn how to effectively test Model-View-Controller applications to ensure quality and reliability."
+  },
+  {
+    "title": "Optimizing Performance in MVC Web Apps",
+    "description": "Techniques for improving the performance of your Model-View-Controller web applications for faster user experiences."
+  }
+]
