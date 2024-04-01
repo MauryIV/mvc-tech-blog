@@ -17,6 +17,9 @@ Blog.init(
     },
     description: {
       type: DataTypes.STRING,
+    },
+    content: {
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     date_created: {
