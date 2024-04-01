@@ -1,0 +1,19 @@
+<form class="form new-blog-form" id="edit-form" data-id="{{id}}">
+  <div class="form-group">
+    <label for="blog-title">Title:</label>
+    <input class="form-input" type="text" id="blog-title" name="blog-title" value="{{title}}"/>
+  </div>
+  <div class="form-group">
+    <label for="blog-desc">Description:</label>
+    <textarea class="form-input" id="blog-desc" name="blog-desc">{{description}}</textarea>
+  </div>
+  <div class="form-group">
+    <label for="blog-content">Content:</label>
+    <textarea class="form-input" id="blog-content" name="blog-content">{{content}}</textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary">Done</button>
+  </div>
+</form>
+
+<script src="/js/blogEdit.js"></script>

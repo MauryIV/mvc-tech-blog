@@ -70,4 +70,28 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+router.get('/newPost', withAuth, (req, res) => {
+  res.render('newPost');
+});
+
+router.get('/blogEdit/:id', async (req, res) => {
+  try {
+    const blogData = await Blog.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['username'],
+        },
+      ],
+    });
+    const blog = blogData.get({ plain: true });
+    res.render('blogEdit', {
+      ...blog,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 module.exports = router;

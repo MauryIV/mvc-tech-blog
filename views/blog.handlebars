@@ -3,4 +3,12 @@
   <p>{{description}}</p>
   <p class="contents">{{content}}</p>
   <p>Created by {{user.username}} on {{format_date date_created}}</p>
+  {{#if logged_in}}
+  <div class="text-center col-md-4">
+    <a class="btn btn-primary" data-id="{{id}}" href="/blogEdit/{{id}}">Edit Post</a>
+    <button class="btn btn-sm btn-danger btn-delete" data-id="{{id}}">Delete Post</button>
+  </div>
+  {{/if}}
 </div>
+
+<script src="/js/blog.js"></script>

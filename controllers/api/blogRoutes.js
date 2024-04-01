@@ -14,6 +14,22 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
+router.put('/:id', withAuth, async (req, res) => {
+  try {
+    const blog = await Blog.findByPk(req.params.id);
+    if (!blog) {
+      return res.status(404).json({ message: 'Blog not found' });
+    }
+    if (blog.user_id !== req.session.user_id) {
+      return res.status(403).json({ message: 'Unauthorized' });
+    }
+    await blog.update(req.body);
+    res.status(200).json(blog);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const blogData = await Blog.destroy({
