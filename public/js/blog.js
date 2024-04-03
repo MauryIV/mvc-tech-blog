@@ -19,7 +19,7 @@ const addComment = async (event) => {
   }
 };
 
-const delButtonHandler = async (event) => {
+const delBlog = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
     const response = await fetch(`/api/blogs/${id}`, {
@@ -34,4 +34,4 @@ const delButtonHandler = async (event) => {
 };
 
 document.querySelector('.comment-form').addEventListener('submit', addComment);
-document.querySelector('.btn-delete').addEventListener('click', delButtonHandler);
+document.querySelector('.btn-delete').addEventListener('click', delBlog);

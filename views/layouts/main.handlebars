@@ -1,36 +1,36 @@
-<html lang='en'>
+<html lang="en">
 
   <head>
-    <meta charset='UTF-8' />
-    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MVC Tech Blog</title>
-    <link rel='stylesheet' href='/css/jass.css' />
-    <link rel='stylesheet' href='/css/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
-    <div class='flex-column justify-space-around'>
-      <header class='display-flex justify-space-between align-center p-2'>
+    <div class="flex-column justify-space-around">
+      <header class="display-flex justify-space-between align-center p-2">
         <h1>
           MVC Tech Blog
         </h1>
         <nav>
-          <a href='/'>Homepage</a>
-          <a href='/dashboard'>Dashboard</a>
+          <a href="/">Homepage</a>
+          <a href="/dashboard">Dashboard</a>
           {{#if logged_in}}
-            <a id='logout' href='/'>Logout</a>
+            <a id="logout" href="/">Logout</a>
           {{else}}
-            <a href='/login'>Login</a>
+            <a href="/login">Login</a>
           {{/if}}
         </nav>
       </header>
-      <main class='container container-fluid mt-5'>
+      <main class="container container-fluid mt-5">
         {{{body}}}
       </main>
     </div>
 
     {{#if logged_in}}
-      <script src='/js/logout.js'></script>
+      <script src="/js/logout.js"></script>
     {{/if}}
 
   </body>
