@@ -35,7 +35,10 @@ This can be a great starting off point for how to write your own MVC type web bl
 
 <a id="Visuals"></a>
 ## Visuals
-NA
+![Screenshot 2024-04-04 at 5 30 32 PM](https://github.com/MauryIV/mvc-tech-blog/assets/146037880/471a529a-70e1-450e-9972-ced7c8febad0)
+![Screenshot 2024-04-04 at 5 30 24 PM](https://github.com/MauryIV/mvc-tech-blog/assets/146037880/c59aaf8e-5144-4e1f-b6e2-740f5dca4d40)
+![Screenshot 2024-04-04 at 5 31 23 PM](https://github.com/MauryIV/mvc-tech-blog/assets/146037880/b3680a6e-4d37-4cae-801e-9cab251de166)
+![Screenshot 2024-04-04 at 5 31 18 PM](https://github.com/MauryIV/mvc-tech-blog/assets/146037880/d7ebed44-ab80-4b61-b289-e7d8cb0a2439)
 
 <a id="tests"></a>
 ## Tests
